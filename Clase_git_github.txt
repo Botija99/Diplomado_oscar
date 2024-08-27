@@ -1,0 +1,71 @@
+**************************************
+* Guia para la clase de Git y GitHub *
+**************************************
+
+1)-Creación de un repositorio
+
+-git init
+-git add
+-git commit
+
+
+Agregamos un mensaje en Vim con ESC + I (editar vim), ahora, para escapar de Vim CON ESC + SHIFT +ZZ.
+
+Luego, vemos un histórico de los commits y rechazamos un git add.
+-git log
+-git rm --cached file_name.txt
+
+Generamos un commit correcto:
+
+-git add .
+-git commit -m 'mensaje'
+
+2)-Observar y modificar las configuraciones de git
+-git config --list
+-git config --global --unset user.name
+-git config --global --add user.name my_name
+
+3)-Eliminar un archivo del repo 
+-git rm file_name
+
+4)-Monitoriar cambios en el repositorio:
+-git status
+-git log file_name
+
+5)-Cambiar entre versiones de archivos:
+-git log
+-git log file_name
+-git show file_name
+-git checkout commit_ID
+
+6)-Mostrar diferencias entre dos commits
+-git diff commit_A commit_B
+
+7)-Reversión de un commit:
+-git revert commit_ID
+
+8)-Creación de una rama:
+-git branch branch_name
+-git checkout branch_name
+-git branch
+-git branch -m master main
+
+9)-Fusion de ramas:
+-git checkout rama_destino
+-git merge rama_a_fusionar
+
+10)-Observamos a git en plataforma visual:
+-gitk -> esto nos permite ver gráficamente el árbol de nuestro proyecto.
+Gitk nos permitira tener una forma amigable de ver nuetro histórico de cambios.
+
+11)-Clonar un repo
+-git clone url
+
+12)-Crear un repo remoto:
+-git remote add origin repo_link
+-git remote
+-git branch main
+-git pull origin main
+-git pull origin main --alow-unrelated-histories
+
+
